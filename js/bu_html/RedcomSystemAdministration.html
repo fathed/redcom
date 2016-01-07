@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled Document</title>
+        <link href="../../css/Terminal.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <div id="cad"></div>
+
+
+        <script type="text/javascript" src="../../jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../../jquery/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="RedcomHardwareConfig.js"></script> 
+
+
+
+        <script>
+
+
+            var RedcomHardwareConfigData = "";
+
+
+
+            var redComSystemAdminNetwork = ["000", "&lt;no name&gt;"];
+            var redComSystemAdminCluster = ["0", "Non-cluster system."];
+            var redComSystemAdminMSU = ["0", "( MSU 0 is active )"];
+            var redComSystemAdminSLOT = ["", ""];
+            var redComSystemAdminCCT = ["", ""];
+            var redComSystemAdminTERM = ["", ""];
+
+            RedcomHardwareConfigData += '<table class="terminalTables">';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td class="centerTD" colspan="4">SLICE V4.0 SYSTEM ADMINISTRATION</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td width="6%">Network</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" width="2%">=</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" width="3%">' + redComSystemAdminNetwork[0] + '</td>';
+            RedcomHardwareConfigData += '<td>' + redComSystemAdminNetwork[1] + '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td colspan="4">&nbsp;</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>Cluster</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" >=</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">' + redComSystemAdminCluster[0] + '</td>';
+            RedcomHardwareConfigData += '<td>' + redComSystemAdminCluster[1] + '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>MSU</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" >=</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">' + redComSystemAdminMSU[0] + '</td>';
+            RedcomHardwareConfigData += '<td>' + redComSystemAdminMSU[1] + '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>SLOT</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" >=</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">' + redComSystemAdminSLOT[0] + '</td>';
+            RedcomHardwareConfigData += '<td>' + redComSystemAdminSLOT[1] + '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>CCT</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" >=</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">' + redComSystemAdminCCT[0] + '</td>';
+            RedcomHardwareConfigData += '<td>' + redComSystemAdminCCT[1] + '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>TERM</td>';
+            RedcomHardwareConfigData += '<td class="centerTD" >=</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">' + redComSystemAdminTERM[0] + '</td>';
+            RedcomHardwareConfigData += '<td>' + redComSystemAdminTERM[1] + '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td class="centerTD" colspan="4">--------------------------- current database msu ---------------------------</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td colspan="4">&nbsp;</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td colspan="4">';
+            RedcomHardwareConfigData += '<table width="100%">';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td width="5%">slot</td>';
+            RedcomHardwareConfigData += '<td width="2%" class="centerTD">|</td>';
+            RedcomHardwareConfigData += '<td width="4%">P</td>';
+            RedcomHardwareConfigData += '<td width="4%">T</td>';
+            RedcomHardwareConfigData += '<td width="4%">0</td>';
+            RedcomHardwareConfigData += '<td width="4%">1</td>';
+            RedcomHardwareConfigData += '<td width="4%">2</td>';
+            RedcomHardwareConfigData += '<td width="4%">3</td>';
+            RedcomHardwareConfigData += '<td width="4%">4</td>';
+            RedcomHardwareConfigData += '<td width="4%">5</td>';
+            RedcomHardwareConfigData += '<td width="4%">6</td>';
+            RedcomHardwareConfigData += '<td width="4%">7</td>';
+            RedcomHardwareConfigData += '<td width="4%">8</td>';
+            RedcomHardwareConfigData += '<td width="4%">9</td>';
+            RedcomHardwareConfigData += '<td width="4%">10</td>';
+            RedcomHardwareConfigData += '<td width="4%">11</td>';
+            RedcomHardwareConfigData += '<td width="4%">12</td>';
+            RedcomHardwareConfigData += '<td width="4%">13</td>';
+            RedcomHardwareConfigData += '<td width="4%">14</td>';
+            RedcomHardwareConfigData += '<td width="4%">15</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>----</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">+</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '<td>---</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>type </td>';
+            RedcomHardwareConfigData += '<td class="centerTD">|</td>';
+
+            for (var i = 0; i < RedcomHardwareTypeVar.length; i++) {
+                RedcomHardwareConfigData += '<td>' + RedcomHardwareTypeVar[i] + '</td>';
+            }
+
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '<tr>';
+            RedcomHardwareConfigData += '<td>pid</td>';
+            RedcomHardwareConfigData += '<td class="centerTD">|</td>';
+
+            for (var i = 0; i < RedcomHardwarePidVar.length; i++) {
+                RedcomHardwareConfigData += '<td>' + RedcomHardwarePidVar[i] + '</td>';
+            }
+
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '</table>';
+            RedcomHardwareConfigData += '</td>';
+            RedcomHardwareConfigData += '</tr>';
+            RedcomHardwareConfigData += '</table>';
+
+
+            $("#cad").html(RedcomHardwareConfigData);
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

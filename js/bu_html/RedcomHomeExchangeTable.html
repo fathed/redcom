@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RedcomHomeExchangeTable</title>
+        <link href="../../css/Terminal.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+        <div id="cad"></div>
+
+        <!--
+        <table class="terminalTables">
+          <tr>
+            <td class="centerTD" colspan="10">HOME EXCHANGE TABLE</td>
+          </tr>
+          <tr>
+            <td width="3%">&nbsp;</td>
+            <td width="10%" class="centerTD">ENTRY</td>
+             <td width="10%" class="centerTD">CC</td>
+             <td width="10%" class="centerTD">NPA</td>
+             <td width="10%" class="centerTD">HMX</td>
+             <td width="10%" class="centerTD">TYPE</td>
+             <td width="10%" class="centerTD">LOCATION</td>
+             <td width="10%" class="centerTD">DESCRIPTION</td>
+            <td width="10%">&nbsp;</td>
+            <td width="10%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="centerTD">0</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">573</td>
+            <td class="centerTD">both_opt</td>
+            <td class="centerTD">native</td>
+            <td class="centerTD">no name</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="centerTD">1</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="centerTD">2</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="centerTD">3</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="centerTD">4</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="centerTD">5</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">----</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td class="centerTD">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="10">msu:0/0</td>
+          </tr>
+        </table>
+        -->
+        <script type="text/javascript" src="../../jquery/jquery-1.10.2.js"></script> 
+        <script>
+            var redcomHomeExchangeTableRow1 = [">", "0", "----", "----", "573", "both_opt", "native", "no name"];
+            var redcomHomeExchangeTableRow2 = ["", "0", "----", "----", "----", "both_opt", "native", "no name"];
+            var redcomHomeExchangeTableRow3 = ["", "0", "----", "----", "----", "both_opt", "native", "no name"];
+            var redcomHomeExchangeTableRow4 = ["", "0", "----", "----", "----", "both_opt", "native", "no name"];
+            var redcomHomeExchangeTableRow5 = ["", "0", "----", "----", "----", "both_opt", "native", "no name"];
+            var totalTables = [redcomHomeExchangeTableRow1, redcomHomeExchangeTableRow2, redcomHomeExchangeTableRow3, redcomHomeExchangeTableRow4, redcomHomeExchangeTableRow5];
+
+
+
+            var redcomHomeExchangeTableData = "";
+
+
+            redcomHomeExchangeTableData += '';
+            redcomHomeExchangeTableData += '<table class="terminalTables">';
+            redcomHomeExchangeTableData += '  <tr>';
+            redcomHomeExchangeTableData += '    <td class="centerTD" colspan="10">HOME EXCHANGE TABLE</td>';
+            redcomHomeExchangeTableData += '  </tr>';
+            redcomHomeExchangeTableData += '  <tr>';
+            redcomHomeExchangeTableData += '    <td width="3%">&nbsp;</td>';
+            redcomHomeExchangeTableData += '    <td width="10%" class="centerTD">ENTRY</td>';
+            redcomHomeExchangeTableData += '     <td width="10%" class="centerTD">CC</td>';
+            redcomHomeExchangeTableData += '     <td width="10%" class="centerTD">NPA</td>';
+            redcomHomeExchangeTableData += '     <td width="10%" class="centerTD">HMX</td>';
+            redcomHomeExchangeTableData += '     <td width="10%" class="centerTD">TYPE</td>';
+            redcomHomeExchangeTableData += '     <td width="10%" class="centerTD">LOCATION</td>';
+            redcomHomeExchangeTableData += '     <td width="10%" class="centerTD">DESCRIPTION</td>';
+            redcomHomeExchangeTableData += '    <td width="10%">&nbsp;</td>';
+            redcomHomeExchangeTableData += '    <td width="10%">&nbsp;</td>';
+            redcomHomeExchangeTableData += '  </tr>';
+
+
+            for (var j = 0; j < totalTables.length; j++) {
+                redcomHomeExchangeTableData += '<tr>';
+                for (var i = 0; i < redcomHomeExchangeTableRow1.length; i++) {
+                    redcomHomeExchangeTableData += '<td class="centerTD">' + totalTables[j][i] + '</td>';
+                }
+
+
+                redcomHomeExchangeTableData += '</tr>';
+
+            }
+
+        //redcomHomeExchangeTableData += '<tr><td>&nbsp;</td></tr>';
+
+
+
+            redcomHomeExchangeTableData += '  <tr>';
+            redcomHomeExchangeTableData += '    <td colspan="10">msu:0/0</td>';
+            redcomHomeExchangeTableData += '  </tr>';
+            redcomHomeExchangeTableData += '  </table>';
+
+
+
+
+
+
+            $("#cad").html(redcomHomeExchangeTableData);
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:4b157ff090c9f5e0120d94a63d8ce047$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(cmdPrompts.png);}
+
+.win7_terminal {width:677px; height:342px; background-position: -681px -2px}
+.xp_terminal {width:677px; height:342px; background-position: -2px -2px}

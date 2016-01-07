@@ -1,0 +1,87 @@
+body {
+    font-family: monospace;
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+}
+.terminal_header {
+    display: none;
+}
+*:focus {
+    outline: 0;
+}
+/*---------------------- generic ------------------------*/
+@font-face {
+    font-family: consolasF;
+    src: url(../fonts/Consolas/CONSOLA.TTF);
+}
+.terminalTables {
+    width: 100%;
+    font-size: 1em;
+}
+/*------------ redcom specific -------------*/
+#dbSearchTable {
+}
+#dbSearchTable td {
+    margin: 10px;
+}
+.trHeader {
+    text-align: center
+}
+.trHeader td {
+    border-bottom: 1px dashed #ffffff;
+}
+.tableBorder {
+    border: 1px solid #ffffff;
+}
+#RedcomSliceGenerationTable {
+    border: 1px solid #e3e3e3;
+    border-collapse: collapse;
+}
+.greyTD {
+    background-color: #CCC;
+    color: #000000;
+}
+.centerTD {
+    text-align: center;
+}
+.rightTD {
+    text-align: right;
+}
+.leftD {
+    text-align: left;
+}
+#hardwareTable {
+    font-size: 10px;
+}
+.innerTables {
+    width: 100%;
+}
+.centerText {
+    text-align: center;
+}
+.borderBarRight {
+    border-right: 1px solid #ffffff;
+}
+.scrollerTable {
+}
+/*------------- terminal -------------*/
+.terminal {
+    font-family: consolasF;
+}
+.terminal_body {
+    position: absolute;
+    width: 98.4%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1em;
+    background-color: transparent;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+}

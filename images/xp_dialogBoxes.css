@@ -1,0 +1,17 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:f7b99306380d101ee8e4d909f68c3ada$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.nwc {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(xp_dialogBoxes.png);}
+
+.localAreaConnectionProperties {width:367px; height:450px; background-position: -408px -377px}
+.network_connections {width:670px; height:373px; background-position: -2px -2px}
+.tcpipProperties {width:404px; height:455px; background-position: -2px -377px}

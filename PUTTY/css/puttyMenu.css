@@ -1,0 +1,252 @@
+/*putty menu*/
+#puttyBox {
+    background-image: url(../images/puttyTerminal.png);
+    width: 456px;
+    height: 438px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#puttyMenu {
+    background-color: #fff;
+    border: 1px solid #999;
+    position: absolute;
+    left: 8px;
+    top: 46px;
+    width: 140px;
+    height: 354px;
+    overflow: auto
+}
+#puttyListItems {
+    margin-left: -20px;
+    margin-top: 0px;
+}
+.puttyMenuClosed {
+    list-style: url(../images/menuItemPlus.png);
+}
+.puttyMenuOpened {
+    list-style: url(../images/menuItemMinus.png);
+}
+li.childLI {
+    list-style: none !important
+}
+li.puttyMenuClosed, li.puttyMenuOpened, li.childLI {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    cursor: pointer
+}
+ul.menuStepIn {
+    margin-left: -30px !important;
+}
+/*               */
+
+#puttyInterface {
+    position: absolute;
+    left: 157px;
+    top: 46px;
+    width: 285px;
+    z-index: 1;
+    font-size: 10px;
+}
+.puttyPanelTitle {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 2px;
+}
+.puttyPalletTitleCenter {
+    margin-bottom: -17px;
+    margin-left: 10px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    z-index: 2;
+}
+.puttyPallet {
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    overflow: auto;
+    z-index: 0;
+}
+.puttyPallet input[type="radio"], .puttyPallet input[type="checkbox"] {
+    margin-top: 0px !important;
+}
+.puttyPalletTitle {
+}
+.puttyRadioButtons {
+    clear: both
+}
+.puttyRadioButtonLabel {
+    margin-right: -5px;
+}
+.puttyRadioRight {
+    width: 130px;
+    position: absolute;
+    right: 10px;
+}
+.puttyRadioLeft {
+}
+.puttyPallet input[type=text], .puttyPallet input[type=button] {
+    font-size: 10px;
+}
+#logFileName {
+    width: 180px;
+}
+/*Session Section Styling*/
+
+#sessionHostName {
+    width: 180px;
+}
+#sessionsHostNameTxt {
+    width: 180px;
+    margin: 4px 0;
+}
+#sessionsPortTxt {
+    width: 60px;
+}
+#sessionsHostRdo input[type=radio] {
+    margin: 0 6px;
+}
+#sessionSavedTxtBox {
+    width: 177px;
+}
+#puttySessionsSaveBtns input[type=button] {
+    width: 70px;
+    margin: 5px 0;
+}
+#sessionsWindowsRdo input[type=radio] {
+    margin: 0 10px;
+}
+/*text boxes*/
+#gapBetweenWindowedgeTB {
+    width: 50px
+}
+#windowTitleTB, #remoteCharachterSetTB {
+    width: 260px;
+}
+#characterClassesTA, #selectAColourToAdjustTA, #sessionsSavedTxtArea, #dataTextArea, #kexAlgorithmTxtArea, #sshEncryptionCipher {
+    resize: none !important;
+    overflow: hidden !important;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#setToClassTB {
+    width: 70px;
+}
+#setToClassBtn {
+    width: 80px
+}
+#setWindowSizeColumnsTB, #setWindowSizeRowsTB {
+    width: 120px;
+}
+#redRGBTB, #blueRGBTB, #greenRGBTB {
+    width: 40px;
+}
+/*Terminal Styling*/
+#terminalAnswer input[type=text] {
+    width: 240px;
+}
+#terminalLocalEcho label {
+    width: 40px;
+}
+#terminalPrintingDrpDwn {
+    width: 240px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.keyboardFunctionKeysStyle {
+    float: left;
+    width: 80px;
+}
+#bellStyling input[type=text] {
+    width: 190px;
+    float: left;
+}
+#bellStyling input[type=button] {
+    width: 60px;
+    float: right;
+}
+.bellOverload .bellTextBoxArea {
+    width: 230px;
+}
+.bellOverload input[type=text] {
+    width: 40px;
+}
+#connectionKeepalives {
+    width: 40px;
+}
+#connectionLogicalName, #proxyExcludeHosts, #proxyTelnet {
+    width: 260px;
+}
+.dataTxtspacing {
+    width: 200px;
+}
+.dataEnvironmentTxt {
+    width: 100px;
+}
+.dataEnvironmentBtn input[type=button] {
+    width: 55px;
+}
+#dataTextArea {
+    width: 260px;
+    height: 40px;
+}
+.proxyTypeRdoStyle {
+    width: 100px;
+}
+#proxyHostname {
+    width: 196px;
+}
+#proxyPortNumber {
+    width: 40px;
+}
+#proxyUsernamePassword, #rloginTextField {
+    width: 130px;
+}
+#proxyUsernameTxtField input[type=text], #rloginTextbox input[type=text] {
+    width: 130px;
+}
+#sshRemoteCommand {
+    width: 260px;
+}
+#sshEncryptionCipher {
+    width: 200px;
+    height: 90px;
+}
+#kexAlgorithmTxtArea {
+    width: 200px;
+    height: 60px;
+}
+#kexMaxMinutes, #kexMaxData {
+    width: 40px;
+}
+#kexTextStyling {
+    width: 200px;
+}
+/*--------------- buttons -----*/
+#puttyClosedBtn {
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 15px;
+    cursor: pointer
+}
+#puttyBtmCancelBtn {
+    position: absolute;
+    right: 15px;
+    width: 80px;
+    font-size: 11px;
+    bottom: 8px;
+}
+#puttyBtmOpenBtn {
+    position: absolute;
+    right: 102px;
+    width: 80px;
+    font-size: 11px;
+    bottom: 8px;
+}
+input:active{
+    border-radius:2px;
+    border:2px solid #3c7fb1;
+    box-shadow: inset 0 0 1px #3bcdf1;
+    background-color:#f1f2f3;
+}

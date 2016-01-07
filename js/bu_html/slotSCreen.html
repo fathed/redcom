@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled Document</title>
+        <link href="../../css/terminal.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <script src="../../../jquery/jquery-1.10.2.js"></script>
+        <script>
+            function RedcomSlotScreen() {
+                this.SlotScreenArr = [];
+                this.SlotScreenArr.push(['PHY', 'auto (10half 10full 100half 100full)']);//0
+                this.SlotScreenArr.push(['FQDN', 'localhost']);//1
+                this.SlotScreenArr.push(['IP_ADDR', '0.0.0.0/0']);//2
+                this.SlotScreenArr.push(['GATEWAY', '0.0.0.0']);//3
+                this.SlotScreenArr.push(['DHCP', 'off']);//4
+                this.SlotScreenArr.push(['60V4_TUNNEL', '0.0.0.0']);//5
+                this.SlotScreenArr.push(['ICMP_ECHO', 'on']);//6
+                this.SlotScreenArr.push(['ND6_REDIRECT', 'off']);//7
+                this.SlotScreenArr.push(['IP6_ADDR', '::/0']);//8
+                this.SlotScreenArr.push(['MTU', '1500']);//9
+				
+				this.SlotScreenArr.push(['VLAN_ID', '0']);//10
+                this.SlotScreenArr.push(['ICMP_DEST', 'on']);//11
+                this.SlotScreenArr.push(['AGENT', '0']);//12
+				
+				
+				
+                this.SlotScreenArr.push(['NET_MASK', '0.0.0.0']);//13
+                this.SlotScreenArr.push(['LINKLOCAL', 'off']);//14
+                this.SlotScreenArr.push(['TAGGING', 'off']);//15
+                this.SlotScreenArr.push(['ICMP6_LIMIT', '500 ms']);//16
+                this.SlotScreenArr.push(['IP6_DAD', 'on']);//17
+                
+				
+                this.SlotScreenArr.push(['msu', '0/0']);//18
+                this.SlotScreenArr.push(['pid', 'pro']);//19
+                this.SlotScreenArr.push(['pid name', 'Processor']);//20
+
+
+                this.slotScreenPorts = 'none';
+                this.slotScreenTimeslots = 'none';
+
+                this.SlotScreenTable = function() {
+                    var SlotScreenBody = '';
+                    SlotScreenBody += '<table class="terminalTables tableBorder">';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td colspan="5" class="greyTD centerTD">SLOT SCREEN</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td width="11%">ports :</td>';
+                    SlotScreenBody += '<td width="15%">'+this.slotScreenPorts+'</td>';
+                    SlotScreenBody += '<td width="42%">&nbsp;</td>';
+                    SlotScreenBody += '<td width="16%">timeslots :</td>';
+                    SlotScreenBody += '<td width="16%">'+this.slotScreenTimeslots+'</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td colspan="5"><table class="terminalTables tableBorder">';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td width="5%">PHY</td>';
+                    SlotScreenBody += '<td width="2%">=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[0][1] + '</td>';
+                    SlotScreenBody += '<td colspan="3">&nbsp;</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>FQDN</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[1][1] + '</td>';
+                    SlotScreenBody += '<td colspan="3">&nbsp;</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>IP_ADDR</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[2][1] + '</td>';
+                    SlotScreenBody += '<td width="5%">NET_MASK</td>';
+                    SlotScreenBody += '<td width="2%">=</td>';
+                    SlotScreenBody += '<td width="14%">' + this.SlotScreenArr[13][1] + '</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>GATEWAY</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[3][1] + '</td>';
+                    SlotScreenBody += '<td>LINKLOCAL</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[14][1] + '</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>DHCP</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td width="17%">' + this.SlotScreenArr[4][1] + '</td>';
+                    SlotScreenBody += '<td width="5%">VLAN_ID</td>';
+                    SlotScreenBody += '<td width="1%">=</td>';
+                    SlotScreenBody += '<td width="14%">' + this.SlotScreenArr[10][1] + '</td>';
+                    SlotScreenBody += '<td>TAGGING</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[15][1] + '</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>60V4_TUNNEL</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[5][1] + '</td>';
+                    SlotScreenBody += '<td colspan="3">&nbsp;</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>ICMP_ECHO</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[6][1] + '</td>';
+                    SlotScreenBody += '<td>ICMP_DEST</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[11][1] + '</td>';
+                    SlotScreenBody += '<td>ICMP6_LIMIT</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[16][1] + '</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>ND6_REDIRECT</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[7][1] + '</td>';
+                    SlotScreenBody += '<td colspan="3">&nbsp;</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>IP6_ADDR</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td colspan="4">' + this.SlotScreenArr[8][1] + '</td>';
+                    SlotScreenBody += '<td colspan="3">&nbsp;</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr>';
+                    SlotScreenBody += '<td>MTU</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[9][1] + '</td>';
+                    SlotScreenBody += '<td>AGENT</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[12][1] + '</td>';
+                    SlotScreenBody += '<td>IP6_DAD</td>';
+                    SlotScreenBody += '<td>=</td>';
+                    SlotScreenBody += '<td>' + this.SlotScreenArr[17][1] + '</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '</table></td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr class="centerTD">';
+                    SlotScreenBody += '<td colspan="5">More ethernet attributes on gen ethernet screen</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '<tr class="greyTD ">';
+                    SlotScreenBody += '<td colspan="5">msu:' + this.SlotScreenArr[18][1] + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pid: ' + this.SlotScreenArr[19][1] + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pid name:' + this.SlotScreenArr[20][1] + '</td>';
+                    SlotScreenBody += '</tr>';
+                    SlotScreenBody += '</table>';
+                    return SlotScreenBody;
+                }
+
+
+
+            }
+            var t = new RedcomSlotScreen();
+
+            var t = new RedcomSlotScreen();
+            $('body').append(t.SlotScreenTable());
+        </script>
+        <!--<table class="terminalTables tableBorder">
+          <tr>
+            <td colspan="5" class="greyTD centerTD">SLOT SCREEN</td>
+          </tr>
+          <tr>
+            <td width="11%">ports :</td>
+            <td width="15%">&lt;replace&gt;</td>
+            <td width="42%">&nbsp;</td>
+            <td width="16%">timeslots :</td>
+            <td width="16%">&lt;replace&gt;</td>
+          </tr>
+          <tr>
+            <td colspan="5"><table  class="terminalTables tableBorder">
+                <tr>
+                  <td width="18%">PHY</td>
+                  <td width="2%">=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>FQDN</td>
+                  <td>=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>IP_ADDR</td>
+                  <td>=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td width="16%">NET_MASK</td>
+                  <td width="2%">=</td>
+                  <td width="14%">&lt;replace&gt;</td>
+                </tr>
+                <tr>
+                  <td>GATEWAY</td>
+                  <td>=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td>LINKLOCAL</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                </tr>
+                <tr>
+                  <td>DHCP</td>
+                  <td>=</td>
+                  <td width="17%">&lt;replace&gt;</td>
+                  <td width="14%">VLAN_ID</td>
+                  <td width="3%">=</td>
+                  <td width="14%">&lt;replace&gt;</td>
+                  <td>TAGGING</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                </tr>
+                <tr>
+                  <td>60V4_TUNNEL</td>
+                  <td>=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>ICMP_ECHO</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                  <td>ICMP_DEST</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                  <td>ICMP6_LIMIT</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                </tr>
+                <tr>
+                  <td>ND6_REDIRECT</td>
+                  <td>=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>IP6_ADDR</td>
+                  <td>=</td>
+                  <td colspan="4">&lt;replace&gt;</td>
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>MTU</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                  <td>AGENT</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                  <td>IP6_DAD</td>
+                  <td>=</td>
+                  <td>&lt;replace&gt;</td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td colspan="5">More ethernet attributes on gen ethernet screen</td>
+          </tr>
+          <tr class="greyTD ">
+            <td colspan="5">msu:&lt;replace&gt; pid: &lt;replace&gt; pid name:&lt;replace&gt;</td>
+          </tr>
+        </table>-->
+    </body>
+</html>

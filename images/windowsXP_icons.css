@@ -1,0 +1,64 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:8a1f7d3e9a77a0c52f0c20670b8a4108:e9213f0f6a7d0f4ac9e9df2d7f9bd240:c991dd839c7cc994a5cc71394a688184$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(windowsXP_icons.png);}
+
+.LocalAreaconn_1394_icon {width:213px; height:54px; background-position: -697px -74px}
+.access_startmenu {width:183px; height:29px; background-position: -697px -693px}
+.allprograms_startmenu {width:150px; height:35px; background-position: -857px -914px}
+.allprograms_startmenu_grey {width:150px; height:35px; background-position: -697px -913px}
+.cablesim {width:62px; height:59px; background-position: -890px -655px}
+.cmd_startmenu {width:128px; height:34px; background-position: -835px -959px}
+.controlpanel_startmenu {width:183px; height:28px; background-position: -697px -808px}
+.folderIcon {width:39px; height:42px; background-position: -974px -434px}
+.hardDisk_icons {width:322px; height:192px; background-position: -373px -1066px}
+.help_startmenu {width:183px; height:29px; background-position: -697px -654px}
+.help_startmenu_grey {width:183px; height:29px; background-position: -697px -615px}
+.hyperterminal {width:100px; height:59px; background-position: -890px -365px}
+.hyperterminal_startmenu {width:128px; height:40px; background-position: -869px -864px}
+.ie_startmenu {width:128px; height:38px; background-position: -697px -958px}
+.localAreaConn_icon {width:213px; height:54px; background-position: -697px -10px}
+.menuCloseMenu {width:13px; height:13px; background-position: -890px -161px}
+.menuOpenMenu {width:13px; height:13px; background-position: -890px -138px}
+.mycomputer_startmenu {width:183px; height:28px; background-position: -697px -770px}
+.mycomputer_startmenu_grey {width:183px; height:28px; background-position: -697px -732px}
+.mydocs_startmenu {width:183px; height:29px; background-position: -697px -576px}
+.mydocs_startmenu_grey {width:183px; height:29px; background-position: -697px -537px}
+.mymusic_startmenu {width:183px; height:31px; background-position: -697px -179px}
+.mymusic_startmenu_grey {width:183px; height:31px; background-position: -697px -138px}
+.mypics_startmenu {width:183px; height:29px; background-position: -697px -498px}
+.mypics_startmenu_grey {width:183px; height:29px; background-position: -697px -459px}
+.myrecentdocs_startmenu {width:183px; height:30px; background-position: -697px -380px}
+.networkConnection_icon {width:74px; height:73px; background-position: -890px -434px}
+.notepad_startmenu {width:103px; height:43px; background-position: -890px -263px}
+.outlook_startmenu {width:162px; height:39px; background-position: -697px -864px}
+.pe {width:65px; height:59px; background-position: -890px -586px}
+.printer_startmenu {width:183px; height:30px; background-position: -697px -340px}
+.printer_startmenu_grey {width:183px; height:30px; background-position: -697px -300px}
+.rj45_female {width:84px; height:58px; background-position: -920px -10px}
+.rj45_male {width:80px; height:54px; background-position: -920px -78px}
+.run_startmenu {width:183px; height:29px; background-position: -697px -420px}
+.search_startmenu {width:183px; height:30px; background-position: -697px -260px}
+.search_startmenu_grey {width:183px; height:30px; background-position: -697px -220px}
+.seperator_startmenu {width:183px; height:8px; background-position: -697px -846px}
+.shutdown_startmenu {width:24px; height:25px; background-position: -965px -578px}
+.startmenu_goldbar {width:353px; height:3px; background-position: -10px -1066px}
+.taskList {width:65px; height:59px; background-position: -890px -517px}
+.textFile_icon {width:38px; height:47px; background-position: -974px -486px}
+.textFile_v3Config {width:125px; height:51px; background-position: -835px -1003px}
+.tftp_folder_icon {width:114px; height:42px; background-position: -890px -211px}
+.tftpserver {width:100px; height:59px; background-position: -913px -142px}
+.tftpserver_startmenu {width:103px; height:39px; background-position: -890px -316px}
+.win-act-start_small {width:29px; height:25px; background-position: -965px -543px}
+.win7_terminal {width:677px; height:342px; background-position: -10px -714px}
+.xp_putty_terminal {width:677px; height:342px; background-position: -10px -362px}
+.xp_terminal {width:677px; height:342px; background-position: -10px -10px}

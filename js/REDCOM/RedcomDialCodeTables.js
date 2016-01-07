@@ -1,0 +1,10 @@
+function RedcomDialCodeTables(){
+	
+	
+	
+	//dialCodeTables.js
+	
+	
+	
+	
+}

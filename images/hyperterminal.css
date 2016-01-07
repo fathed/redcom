@@ -1,0 +1,18 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:5ee831eabcefff4e31966a306247532b$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(hyperterminal.png);}
+
+.HyperTerminal_1 {width:332px; height:299px; background-position: -685px -2px}
+.HyperTerminal_2 {width:296px; height:300px; background-position: -685px -303px}
+.HyperTerminal_3 {width:344px; height:407px; background-position: -2px -581px}
+.HyperTerminal_4 {width:681px; height:577px; background-position: -2px -2px}

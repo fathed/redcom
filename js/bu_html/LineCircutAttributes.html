@@ -1,0 +1,217 @@
+<link rel="stylesheet" type="text/css" href="../../css/mobileTerminal.css">
+<style>
+table {
+	color: white;
+}
+</style>
+
+
+<!--<table width="100%" border="0" class="terminalTables tableBorder">
+  <tbody>
+    <tr>
+      <td colspan="13" class="greyTD centerTD">LINE CIRCUT ATTRIBUTES</td>
+    </tr>
+    <tr>
+      <td width="7%">STATION</td>
+      <td width="2%" class="centerTD">=</td>
+      <td colspan="7">0:5150&nbsp;&nbsp;&nbsp;( 414 )574-5150</td>
+      <td colspan="3">LINKED group = none</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td class="centerTD">=</td>
+      <td colspan="7">Commanding Officer.</td>
+      <td colspan="3">member group : none</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>EMAIL</td>
+      <td class="centerTD">=</td>
+      <td colspan="7"><span class="a"></span></td>
+      <td colspan="3">FORWARD = </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>ATTRIBUTES</td>
+      <td class="centerTD">=</td>
+      <td colspan="7">on</td>
+      <td width="12" colspan="2">ALL=off</td>
+      <td width="12%">DNA=off</td>
+      <td>BUSY=off</td>
+    </tr>
+    <tr>
+      <td>TOLL_LIST</td>
+      <td class="centerTD">=</td>
+      <td colspan="7">un-restricted DOD ( 0 )</td>
+      <td colspan="3">COVERAGE = </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>priority</td>
+      <td class="centerTD">: </td>
+      <td colspan="7">IDLE=r DEFAULT=r MAX_p=fo</td>
+      <td colspan="2">CALL=off</td>
+      <td>CDNA=off</td>
+      <td>CBUSY=off</td>
+    </tr>
+    <tr>
+      <td>OHS_DIGITS</td>
+      <td class="centerTD">= </td>
+      <td colspan="7">&nbsp;</td>
+      <td colspan="3">RING = ( 18 ) normal</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>DCT</td>
+      <td class="centerTD">=</td>
+      <td>0</td>
+      <td colspan="2">SCREEN = 0</td>
+      <td colspan="4">AFL = none</td>
+      <td>AUTH_CODE  </td>
+      <td>&nbsp;=&nbsp;</td>
+      <td>Not Activated</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>CAC1=</td>
+      <td class="centerTD">&nbsp;</td>
+      <td colspan="2">CAC2=</td>
+      <td colspan="5">CAC3=</td>
+      <td>PASSWORD</td>
+      <td>&nbsp;=&nbsp;</td>
+      <td>XXXX</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>ATTR_TABLE</td>
+      <td class="centerTD">=</td>
+      <td width="3%">0</td>
+      <td colspan="6">SNS = none</td>
+      <td>LAST_SAVE</td>
+      <td>&nbsp;=&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="7">&nbsp;</td>
+      <td>BACKP</td>
+      <td>&nbsp;=&nbsp;</td>
+      <td>off</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="9">COS = 1 - Analog Line Class</td>
+      <td colspan="3">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="13">
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="16%">BSYO=on</td>
+              <td>CRNG=off</td>
+              <td>LNR=on</td>
+              <td>PPAY=off</td>
+              <td>SPAY=off</td>
+              <td>TRAP=on</td>
+            </tr>
+            <tr>
+              <td>CFWD=on</td>
+              <td>CWT=off</td>
+              <td>MANT=off</td>
+              <td>PREM=on</td>
+              <td>SPL3=on</td>
+              <td>TRKX=on</td>
+            </tr>
+            <tr>
+              <td>CNAB=off</td>
+              <td>DATP=on</td>
+              <td>MIXD=on</td>
+              <td>RADI=on</td>
+              <td>SSR=on</td>
+              <td>WAKE=on</td>
+            </tr>
+            <tr>
+              <td>CNBU=off</td>
+              <td>DID=on</td>
+              <td>NODP=on</td>
+              <td>RDL=on</td>
+              <td>TGEN=on</td>
+              <td>WARM=on</td>
+            </tr>
+          </tbody>
+        </table>
+   </td>
+    </tr>
+    <tr>
+      <td colspan="13" class="greyTD">Address: 0/0.4/0 | STN=0:5150 | Hdw: xd2 | Name: Commanding Officer.</td>
+    </tr>
+  </tbody>
+</table>-->
+
+<div id="dd"></div>
+<script src="../jquery/jquery.js"></script> 
+<script type="text/javascript" src="LineCircutAttributes.js"></script>
+<script>
+
+var t = new LineCircutAttributes();
+
+$("#dd").append(t.display_LineCircut());
+
+
+/*
+station
+name
+email
+attributes
+toll list
+idle
+default
+max p
+ohs digits
+dct
+screen
+afl
+cac1
+cac2
+cac3
+attr table
+sns
+linked group
+member group
+forward
+all
+dna
+busy
+coverage
+call
+cdna
+cbusy
+ring
+auth code
+password
+last save
+backup
+*/
+/*var t = 0; //current line circut attributes list
+lineCircutArr = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+
+
+lineCircutArr[0] = 'asshat';
+$('.a').append(lineCircutArr[0]);*/
+//32
+
+/*for(var i =0;i<32;i++){
+	$("#dd").append("'no',");
+}
+*/
+
+
+
+
+
+</script> 

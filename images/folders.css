@@ -1,0 +1,18 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:5e3b43c97e7912528b13e19427171ae8$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.folders {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(folders.png);}
+
+.local_disk_c_folder {width:670px; height:373px; background-position: -674px -377px}
+.my_computer_folder {width:670px; height:373px; background-position: -2px -377px}
+.network_connections_folder {width:670px; height:373px; background-position: -674px -2px}
+.tftp_root_folder {width:670px; height:373px; background-position: -2px -2px}

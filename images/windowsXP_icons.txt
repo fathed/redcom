@@ -1,0 +1,372 @@
+{"frames": {
+
+"LocalAreaconn_1394_icon.png":
+{
+	"frame": {"x":233,"y":375,"w":213,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":213,"h":54},
+	"sourceSize": {"w":213,"h":54}
+},
+"access_startmenu.png":
+{
+	"frame": {"x":1687,"y":288,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"allprograms_startmenu.png":
+{
+	"frame": {"x":1526,"y":371,"w":150,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":35},
+	"sourceSize": {"w":150,"h":35}
+},
+"allprograms_startmenu_grey.png":
+{
+	"frame": {"x":1366,"y":371,"w":150,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":35},
+	"sourceSize": {"w":150,"h":35}
+},
+"cmd_startmenu.png":
+{
+	"frame": {"x":1228,"y":362,"w":128,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":34},
+	"sourceSize": {"w":128,"h":34}
+},
+"controlpanel_startmenu.png":
+{
+	"frame": {"x":649,"y":401,"w":183,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":28},
+	"sourceSize": {"w":183,"h":28}
+},
+"folderIcon.png":
+{
+	"frame": {"x":1937,"y":384,"w":39,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":39,"h":42},
+	"sourceSize": {"w":39,"h":42}
+},
+"hardDisk_icons.png":
+{
+	"frame": {"x":1384,"y":10,"w":322,"h":192},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":192},
+	"sourceSize": {"w":322,"h":192}
+},
+"help_startmenu.png":
+{
+	"frame": {"x":1712,"y":249,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"help_startmenu_grey.png":
+{
+	"frame": {"x":1716,"y":210,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"hyperterminal.png":
+{
+	"frame": {"x":1577,"y":273,"w":100,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":59},
+	"sourceSize": {"w":100,"h":59}
+},
+"hyperterminal_startmenu.png":
+{
+	"frame": {"x":1686,"y":376,"w":128,"h":40},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":40},
+	"sourceSize": {"w":128,"h":40}
+},
+"ie_startmenu.png":
+{
+	"frame": {"x":1859,"y":336,"w":128,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":38},
+	"sourceSize": {"w":128,"h":38}
+},
+"localAreaConn_icon.png":
+{
+	"frame": {"x":10,"y":375,"w":213,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":213,"h":54},
+	"sourceSize": {"w":213,"h":54}
+},
+"menuCloseMenu.png":
+{
+	"frame": {"x":1880,"y":288,"w":13,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+	"sourceSize": {"w":13,"h":13}
+},
+"menuOpenMenu.png":
+{
+	"frame": {"x":1577,"y":342,"w":13,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+	"sourceSize": {"w":13,"h":13}
+},
+"mycomputer_startmenu.png":
+{
+	"frame": {"x":456,"y":401,"w":183,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":28},
+	"sourceSize": {"w":183,"h":28}
+},
+"mycomputer_startmenu_grey.png":
+{
+	"frame": {"x":1384,"y":333,"w":183,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":28},
+	"sourceSize": {"w":183,"h":28}
+},
+"mydocs_startmenu.png":
+{
+	"frame": {"x":1035,"y":362,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"mydocs_startmenu_grey.png":
+{
+	"frame": {"x":842,"y":362,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"mymusic_startmenu.png":
+{
+	"frame": {"x":1716,"y":10,"w":183,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":31},
+	"sourceSize": {"w":183,"h":31}
+},
+"mymusic_startmenu_grey.png":
+{
+	"frame": {"x":1384,"y":212,"w":183,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":31},
+	"sourceSize": {"w":183,"h":31}
+},
+"mypics_startmenu.png":
+{
+	"frame": {"x":649,"y":362,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"mypics_startmenu_grey.png":
+{
+	"frame": {"x":456,"y":362,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"myrecentdocs_startmenu.png":
+{
+	"frame": {"x":1716,"y":131,"w":183,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":30},
+	"sourceSize": {"w":183,"h":30}
+},
+"networkConnection_icon.png":
+{
+	"frame": {"x":1909,"y":79,"w":74,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":73},
+	"sourceSize": {"w":74,"h":73}
+},
+"notepad_startmenu.png":
+{
+	"frame": {"x":1909,"y":231,"w":103,"h":43},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":43},
+	"sourceSize": {"w":103,"h":43}
+},
+"outlook_startmenu.png":
+{
+	"frame": {"x":1687,"y":327,"w":162,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":39},
+	"sourceSize": {"w":162,"h":39}
+},
+"printer_startmenu.png":
+{
+	"frame": {"x":1716,"y":91,"w":183,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":30},
+	"sourceSize": {"w":183,"h":30}
+},
+"printer_startmenu_grey.png":
+{
+	"frame": {"x":1384,"y":293,"w":183,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":30},
+	"sourceSize": {"w":183,"h":30}
+},
+"run_startmenu.png":
+{
+	"frame": {"x":1716,"y":171,"w":183,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":29},
+	"sourceSize": {"w":183,"h":29}
+},
+"search_startmenu.png":
+{
+	"frame": {"x":1716,"y":51,"w":183,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":30},
+	"sourceSize": {"w":183,"h":30}
+},
+"search_startmenu_grey.png":
+{
+	"frame": {"x":1384,"y":253,"w":183,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":30},
+	"sourceSize": {"w":183,"h":30}
+},
+"seperator_startmenu.png":
+{
+	"frame": {"x":842,"y":401,"w":183,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":8},
+	"sourceSize": {"w":183,"h":8}
+},
+"shutdown_startmenu.png":
+{
+	"frame": {"x":1993,"y":114,"w":24,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":25},
+	"sourceSize": {"w":24,"h":25}
+},
+"startmenu_goldbar.png":
+{
+	"frame": {"x":10,"y":362,"w":353,"h":3},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":353,"h":3},
+	"sourceSize": {"w":353,"h":3}
+},
+"taskList.png":
+{
+	"frame": {"x":1909,"y":162,"w":65,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":59},
+	"sourceSize": {"w":65,"h":59}
+},
+"textFile_icon.png":
+{
+	"frame": {"x":1984,"y":162,"w":38,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":47},
+	"sourceSize": {"w":38,"h":47}
+},
+"textFile_v3Config.png":
+{
+	"frame": {"x":1577,"y":212,"w":125,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":125,"h":51},
+	"sourceSize": {"w":125,"h":51}
+},
+"tftp_folder_icon.png":
+{
+	"frame": {"x":1905,"y":284,"w":114,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":42},
+	"sourceSize": {"w":114,"h":42}
+},
+"tftpserver.png":
+{
+	"frame": {"x":1909,"y":10,"w":100,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":59},
+	"sourceSize": {"w":100,"h":59}
+},
+"tftpserver_startmenu.png":
+{
+	"frame": {"x":1824,"y":384,"w":103,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":39},
+	"sourceSize": {"w":103,"h":39}
+},
+"win-act-start_small.png":
+{
+	"frame": {"x":1993,"y":79,"w":29,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":25},
+	"sourceSize": {"w":29,"h":25}
+},
+"win7_terminal.png":
+{
+	"frame": {"x":697,"y":10,"w":677,"h":342},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":677,"h":342},
+	"sourceSize": {"w":677,"h":342}
+},
+"xp_terminal.png":
+{
+	"frame": {"x":10,"y":10,"w":677,"h":342},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":677,"h":342},
+	"sourceSize": {"w":677,"h":342}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "windowsXP_icons.png",
+	"format": "RGBA8888",
+	"size": {"w":2032,"h":439},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:da21d3482e764c5f2461696ee35bf5ed$"
+}
+}

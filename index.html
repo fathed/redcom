@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>REDCOM</title>
+        <!--  <link href="css/terminal.css" rel="stylesheet" type="text/css">-->
+        <link href="css/terminal.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!--
+        for building purposes these are all included separately.
+        the final product will be one file minified
+        
+        I need to make sure all text is part of one singular variable and not a series
+        -->
+        <script src="js/jquery/jquery.js"></script>
+        <script src="js/jquery/jquery-ui.min.js"></script>
+        <script src="js/jquery/jquery.ui.touch-punch.min.js"></script>
+       <!-- <script src="js/REDCOM_total.min.js"></script>-->
+
+        <script src="js/Terminal/TerminalHelp.js"></script>
+        <script src="js/general/stripQuotes.js"></script>
+        <script src="js/REDCOM/RedcomDecipher.js"></script>
+        <script src="js/REDCOM/dialCodeTables.js"></script>
+        <script src="js/REDCOM/RedcomIPList.js"></script>
+
+        <script src="js/REDCOM/RedcomLineClasses.js"></script>
+        <script src="js/REDCOM/RedcomStationListings.js"></script>
+        <script src="js/REDCOM/RedcomDatabaseSearch.js"></script>
+        <script src="js/REDCOM/redcomShortcuts.js"></script>
+        <script src="js/REDCOM/RedcomEtherNetConfig.js"></script>
+        <script src="js/REDCOM/RedcomSliceGeneration.js"></script>
+        <script src="js/REDCOM/RedcomHardwareConfig.js"></script>
+        <script src="js/REDCOM/RedcomHomeExchangeTable.js"></script>
+        <script src="js/REDCOM/RedcomSystemAdministration.js"></script>
+        <script src="js/REDCOM/RedcomSystemConfig.js"></script>
+        <script src="js/REDCOM/redComDBDecipher.js"></script>
+        <script src="js/REDCOM/RedcomDatabaseTableConfigSettings.js"></script>
+        <script src="js/REDCOM/redComDBDecipher.js"></script>
+        <script src="js/REDCOM/RedcomFunctions.js"></script>
+        <script src="js/REDCOM/RedcomSlotScreen.js"></script>
+        <script src="js/general/cursorManager.js"></script>
+        <script src="js/general/RefreshCursor.js"></script>
+        <script src="js/Terminal/ProcessTerminalText.js"></script>
+        <script src="js/Terminal/TerminalCommands.js"></script>
+        <script src="js/Terminal/TerminalScroller.js"></script>
+        <script src="js/Terminal/TerminalClear.js"></script>
+        <script src="js/Terminal/TerminalRefreshCursor.js"></script>
+        <script src="js/Terminal/TerminalClear.js"></script>
+        <script src="js/REDCOM/redcom.js"></script>
+        <script src="js/Terminal/terminal.js"></script>
+        <script src="js/Tempus/tempus.js"></script>
+        <script src="js/general/mobile.js"></script>
+
+        <script>
+            /*
+             * TEMPUS needs to know what items will be loaded up - for now it is just redcom
+             * so I am dynamically loading all of these libraries using getScript thru jQuery
+             */
+            var t = {},
+                    tempusTools = ['redcom'], //to load up the wanted tools
+                    redcomSettings = ['REDCOM'], //first col is name
+                    paraSettings = [''], //first col is name
+                    toolSettings = [redcomSettings, paraSettings], //the settings for each tool
+                    tempusSettings = [tempusTools, toolSettings],
+                    tempusBuild = new tempus(tempusSettings);
+        </script>
+    </body>
+</html>

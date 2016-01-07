@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled Document</title>
+        <link href="../../css/terminal.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <script src="../../../jquery/jquery-1.10.2.js"></script> 
+
+        <script>
+            /*
+             * 
+             */
+
+
+
+            function RedcomHomeExchangeTable() {
+
+
+                this.totalTables = [];
+                this.currRow = 0;
+                this.numOfRows = 5;
+
+                var whichHomeExchangeTableDB = 0; //let me know which row we are working on - zero indexed array
+
+
+                var tablesBuilt = false;
+
+                this.restorHomeExchangeTable = function() {
+                    for (var t = 0; t < this.numOfRows; t++) {
+                        this.totalTables.push(["", "0", "----", "----", "----", "both_opt", "native", "no name"]);
+                    }
+                }
+                if (!tablesBuilt) {
+                    this.restorHomeExchangeTable();
+                    tablesBuilt = true; // stop the class from over-writing the table
+                }
+
+                this.homeExchangeTable = function() {
+                    var redcomHomeExchangeTableData = "";
+                    redcomHomeExchangeTableData += '<table class="terminalTables">';
+                    redcomHomeExchangeTableData += '<tr>';
+                    redcomHomeExchangeTableData += '<td class="greyTD centerTD" colspan="7" >HOME EXCHANGE TABLE</td>';
+                    redcomHomeExchangeTableData += '</tr>';
+                    redcomHomeExchangeTableData += '<tr>';
+                    redcomHomeExchangeTableData += '<td width="1%">&nbsp;</td>';
+                    redcomHomeExchangeTableData += '<td>ENTRY</td>';
+                    redcomHomeExchangeTableData += '<td>CC</td>';
+                    redcomHomeExchangeTableData += '<td>NPA</td>';
+                    redcomHomeExchangeTableData += '<td>HMX</td>';
+                    redcomHomeExchangeTableData += '<td>TYPE</td>';
+                    redcomHomeExchangeTableData += '<td>LOCATION</td>';
+                    redcomHomeExchangeTableData += '<td>DESCRIPTION</td>';
+                    redcomHomeExchangeTableData += '</tr>';
+
+
+                    for (var i = 0; i < this.totalTables.length; i++) {
+                        redcomHomeExchangeTableData += ' <tr>';
+                        redcomHomeExchangeTableData += '<td>';
+                        if (i == this.currRow) {
+                            redcomHomeExchangeTableData += "&gt;";
+                        } else {
+                            redcomHomeExchangeTableData += this.totalTables[i][0];
+                        }
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][1];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][2];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][3];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][4];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][5];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][6];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '<td>';
+                        redcomHomeExchangeTableData += this.totalTables[i][7];
+                        redcomHomeExchangeTableData += '</td>';
+                        redcomHomeExchangeTableData += '</tr>';
+                    }
+
+
+
+
+                    redcomHomeExchangeTableData += '<tr>';
+                    redcomHomeExchangeTableData += '<td colspan="7">msu:0/0</td>';
+                    redcomHomeExchangeTableData += '</tr>';
+                    redcomHomeExchangeTableData += '</table>';
+
+
+
+
+
+
+                    return redcomHomeExchangeTableData;
+                };
+
+            }
+            var t = new RedcomHomeExchangeTable();
+
+            t.totalTables[t.currRow][5] = 'asshat';
+            t.totalTables[t.currRow][2] = 'asshat';
+
+
+            $('body').append(t.homeExchangeTable());
+
+        </script>
+    </body>
+</html>
